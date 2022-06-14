@@ -21,7 +21,7 @@ const contact = ({ data }) => {
         <div>
           <span>
             <h3> ID:{item.id}</h3>
-            <Link href={`/blogdata/${item.id}`}>
+            <Link href="/post">
               <h3>Title: {item.title} </h3>
             </Link>
             <h3>Body: {item.body} </h3>
