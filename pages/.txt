@@ -1,0 +1,21 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+const Errorpage = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/");
+    }, 3000);
+  });
+  return (
+    <div className="error">
+      <h1>404 Page Not Found</h1>
+      <Link href="/">
+        <a>Back to Home Page</a>
+      </Link>
+    </div>
+  );
+};
+
+export default Errorpage;
